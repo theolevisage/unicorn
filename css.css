@@ -50,20 +50,34 @@
 
 .element {
     display: flex;
-    align-items: center;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
 }
 
-.rightside{
-    direction: rtl;
-}
 
 img {
     border-radius: 5px;
 }
 
+.gestionarticles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*
+    align-self: flex-start;
+    */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+
+}
+
+
+
+.contentarticles{
+    margin-top: 5%;
+}
 
 
 i.fb,       span.fb{     	color: #3b5998; }
@@ -175,6 +189,20 @@ input[type=submit]:hover {
 		margin-bottom: 2%;
 		text-align: center;
 	}
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titrearticles{
+        text-align: center;
+    }
+
+    .contentarticles{
+        text-align: justify;
+        text-justify: inter-word;
+    }
 }
 
 @media screen and (min-width:1000px)  {
@@ -197,6 +225,10 @@ input[type=submit]:hover {
 	#third{
 		align-self: center;
 	}
+
+    .rightside{
+        direction: rtl;
+    }
 }
 
 
